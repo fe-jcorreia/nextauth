@@ -38,6 +38,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
         permissions,
         roles,
       });
+      console.log(response);
       Router.push("/dashboard");
     } catch (err) {
       console.log(err);
